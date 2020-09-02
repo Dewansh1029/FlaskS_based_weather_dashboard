@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Today Weather Information</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='styles/result.css')}}"
+    />
+  </head>
+  <body>
+    <div>
+      <h2 id="weatherlocation">Weather in {{location}}</h2>
+      <h2 id="temp">Temperature in {{temp}}° F</h2>
+      <h2 id="weather">{{weather}}</h2>
+      <h2 id="feels">Feels like :{{feels_like}}° F</h2>
+      <h2 id="descri">looks : {{description}}</h2>
+      <h2 id="temp_mi">Max temp : {{temp_min}} F</h2>
+      <h2 id="temp_ma">Min temp : {{temp_max}} F</h2>
+    </div>
+  </body>
+</html>
