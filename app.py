@@ -2,13 +2,15 @@ import requests
 import configparser
 from  flask import Flask ,render_template, request
 
+# uique identifier for the flask session 
+app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
 app = Flask(__name__)
 
 @app.route('/')
 def weather_dashboard():
     return render_template('home.html')
 
-@app.route('/results', methods=['POST'])
+@app.route('/results', methods=['POST','GET'])
 def render_results():
     city_name=request.form['cityname']
     state_name=request.form['statename']
