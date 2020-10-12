@@ -1,32 +1,20 @@
 <html>
   <head>
     <tittle class="weatherText">Weather Dashboard</tittle>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{url_for('static', filename='styles/home.css')}}"
-    />
+    <link rel="stylesheet" type="text/css" href="home.css">
   </head>
   <body>
-    <h2 class="weatherText">World weather Information</h2>
-    <form
-      class="weatherText"
-      id="weatherForm"
-      action="{{url_for('render_results')}}"
-      method="post"
-    >
-      City name :
-      <input type="text" name="cityname" /><br />
-      State name :
-      <input type="text" name="statename" /><br />
-      Country code:
-      <input type="text" name="countrycode" /><br />
-      <input
-        class="weatherText"
-        id="weatherSubmit"
-        type="submit"
-        value="Submit"
-      />
-    </form>
+    <div class="container">
+      <h2 class="weatherText">World weather Information</h2>
+        <form class="weatherText" id="weatherForm" action="{{url_for('render_results')}}" method="post">
+          <h3>City name :
+          <input type="text" name="cityname" /></h3><br />
+          <h3>State name :
+          <input type="text" name="statename" /></h3><br />
+          <h3>Country code:
+          <input type="text" name="countrycode" /></h3><br />
+          <input class="weatherText" id="weatherSubmit" type="submit" value="Submit"/>
+        </form>
+    </div>
   </body>
 </html>
