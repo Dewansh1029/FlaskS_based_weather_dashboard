@@ -1,3 +1,58 @@
-Developed a Weather Dashboard providing real-time updates and forecasts for users' locations.
-Enabled city search functionality where users can enter the name of a city or "city, state" to retrieve weather data.
-Displayed current weather conditions including temperature, humidity, and other relevant metrics.
+📋 Features
+
+Fetches real-time weather data for Bangalore.
+
+Displays information in a clean format:
+
+Weather in Bangalore: Humidity: 65%, Condition: Clear sky
+
+
+Saves the output in a structured JSON file (weather_data.json).
+
+Automatically reads your API key from a configuration file (config.ini).
+
+🛠️ Requirements
+
+Python 3.x
+
+OpenWeather API key
+
+Required packages:
+
+pip install requests
+
+⚙️ Setup Instructions
+
+Clone the repository
+
+git clone https://github.com/yourusername/bangalore-weather-fetcher.git
+cd bangalore-weather-fetcher
+
+
+Create and configure config.ini
+In the same directory, create a file named config.ini with the following content:
+
+[openweathermap]
+api = YOUR_API_KEY_HERE
+
+
+🔑 Replace YOUR_API_KEY_HERE with your actual OpenWeather API key.
+You can get a free API key from https://openweathermap.org/api
+.
+
+Run the script
+
+python app.py
+
+
+Output Example
+
+Weather in Bangalore: Humidity: 70%, Condition: Broken clouds
+✅ Weather data saved to weather_data.json
+
+📁 Example Output (weather_data.json)
+{
+    "city": "Bangalore",
+    "humidity": "70%",
+    "condition": "Broken clouds"
+}
