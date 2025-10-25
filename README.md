@@ -25,7 +25,7 @@ pip install requests
 
 Clone the repository
 
-git clone https://github.com/yourusername/bangalore-weather-fetcher.git
+git clone https://https://github.com/Dewansh1029/FlaskS_based_weather_dashboard
 cd bangalore-weather-fetcher
 
 
@@ -48,7 +48,7 @@ python app.py
 Output Example
 
 Weather in Bangalore: Humidity: 70%, Condition: Broken clouds
-✅ Weather data saved to weather_data.json
+Weather data saved to weather_data.json
 
 📁 Example Output (weather_data.json)
 {
