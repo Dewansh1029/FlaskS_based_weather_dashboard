@@ -23,13 +23,13 @@ pip install requests
 
 ⚙️ Setup Instructions
 
-Clone the repository
+Step 1: Clone the repository
 
 git clone https://https://github.com/Dewansh1029/FlaskS_based_weather_dashboard
 cd bangalore-weather-fetcher
 
 
-Create and configure config.ini
+Step 2: Create and configure config.ini
 In the same directory, create a file named config.ini with the following content:
 
 [openweathermap]
@@ -40,12 +40,12 @@ api = YOUR_API_KEY_HERE
 You can get a free API key from https://openweathermap.org/api
 .
 
-Run the script
+Step 3: Run the script
 
 python app.py
 
 
-Output Example
+Step 4: Output Example
 
 Weather in Bangalore: Humidity: 70%, Condition: Broken clouds
 Weather data saved to weather_data.json
